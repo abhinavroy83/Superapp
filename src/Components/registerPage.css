@@ -1,0 +1,22 @@
+.registerMain {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerImage {
+  width: 50vw; /* Set the width to 50% of viewport width */
+  height: 100vh;
+}
+/* .form {
+  display: flex;
+  flex-direction: column;
+} */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

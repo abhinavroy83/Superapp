@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import RegisterPage from "./Components/RegisterPage";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <div>crete super app</div>
+      {/* <RegisterPage />
+      <Outlet /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
