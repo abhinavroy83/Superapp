@@ -14,7 +14,7 @@ function RegisterPage() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/select");
+    // navigate("/select");
   };
 
   return (
@@ -73,9 +73,9 @@ function RegisterPage() {
           {...register("check", { required: true })}
         />
         {errors.check && <p>required</p>}
-        <button type="submit"></button>
+        <button type="submit">Submit</button>
       </form>
-      {/* <Link to="/Select">sel</Link> */}
+      <Link to="/Category">sel</Link>
     </div>
   );
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Action",
+    "url": "https://s3-alpha-sig.figma.com/img/61e3/7c12/c4dec726b2728f622e0515db4db88d29?Expires=1698019200&Signature=RrwhTdECtFjcnQmoZY4nwfZBFCaZXydJLBiI2l9jUw1hEmKakAj4~5e3p9~ozFkIcDlKeRlJvxopRPJwpBiibpyEgDINayLKBxb9LP1dpY4SfmQ2VfqvC1mK0qpnBs9-6UGCu0cuKfh194hNp5eDFNDJ1c8KmtlmO0m7v4itrpXTamx6h80nEvnavDHeh1OkxjdWEYFRCfpP40L0rO~58tURiiZV-20Q8qqrrE4iE0sbe9Ew1yWBHMeOgFm-SUQV5jZExJFrs8h69aT0qTqKGkRKRTwnvcWOxpun55iN98Ofk0PoC2KXJWx9Vu41RtE6iWNg9T2V~YP3x6yZ7d7P3w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#f2c335",
+    "title": "Action"
+  },
+  {
+    "id": 2,
+    "name": "Drama",
+    "url": "https://s3-alpha-sig.figma.com/img/352f/43af/a4708c73abc57d453cde278b09fb1186?Expires=1698019200&Signature=fjy4O1tXHkDMme8qw7DFzu66YBZT0u3lcXLLaS9sELXZKLOnZqdg-G3blb4Traqcj74FkVlDXdXg8eZM9AMaiOMUfdVXG0bgvFP-5xs2C2E34Ttorx87f1hb7QyV5r7E1fs1K5JaeG4dZTAmb0Ct9XWylHnHj1uPHqA-cGJZc0cYPu99mthNRTTBFgKUk0ty~UFEIfgThbpqDL~yNQR5RU8RhZhVZO8mioZ4rISkE-umnl2aTWw2iimNmjIk13s44hAEn5l6cgYqsfvtImGqCsaBy6~YNC17TbaRoAFLjj3vZvmsMvhb6XwqyGgOdCatZsbgVbzC9frsN84aQaoLQA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#35baf2",
+    "title": "Drama"
+  },
+  {
+    "id": 3,
+    "name": "Romance",
+    "url": "https://s3-alpha-sig.figma.com/img/9d53/7405/d747debca63143d2755f3574107ddb23?Expires=1698019200&Signature=S7q2fnm4s1Azm1EbM1sl53kB20RvJauaKKmRw1b9l1tz1h~QfKf2ctuJryPbP~Kwa3mkiJgrZsWMaP6gmwe3UsjyFW-G5ggCMN6YJGlPUYCz58i6jV9QNe5XAfXJZ9fwES8O-z9QzTA5C2iULkTgB~FhIIrRuNjx~Mo9P70ejSkWkd4lDZZZ1ijnv1X7iqv3w8JTnjqtPVenoZrBvuo3CSEQZpBKXL2OS51MOjqRahIy~1aqQx2JbCJvVYgYdAAlFFgcE-3R7LHgUGfBtVRKeCHNg1ZadR4nVhiAnSGDzymm7BviO1HyKQybImHU5f5teZ-c1MxHg~OZHZf4rGkjeg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#f235b5",
+    "title": "Romance"
+  },
+  {
+    "id": 4,
+    "name": "Thriller",
+    "url": "https://s3-alpha-sig.figma.com/img/6843/a8c4/f1eeda63160b7168e1e2f52bbc62513e?Expires=1698019200&Signature=IGYqGNMEuDhd-dTN29BvUh-MF9Ksv1qQlIyPoWzjsis5YlOx7PcUYjW49jTQflJdgt-a-Gq0kTfjpC5YJFEQc8lA315f2q6IjgdvOfrp8Gx5pUnLa00VbCF3GUk-kcMBCi-HeHsqsjPus23JYk-6zWnOU7Rvm0L22voXimaBtF-64hBasjDFKZetbSEMhgVggH-yNWkeN2ABxggX8tUkKZydb1Xp-jzNDocE8QJ0JjWvq8ift1sz7~ytrPqKAeYlZGn2Qrfl~0RSFBgH5fYuBCEJ~h~MLD58Rc7g1YzmXORTlaow-gy2yp6-3hqrUoA91R4tveGM0~fbfUc1aH0Hsg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#35f2a5",
+    "title": "Thriller"
+  },
+  {
+    "id": 5,
+    "name": "Western",
+    "url": "https://s3-alpha-sig.figma.com/img/8b6e/e1b7/756c86e21bf5ba349baf91016ed9a8dc?Expires=1698019200&Signature=QgzdbJbGw4ihV5LVx0aWpOrp3Dl-5UJKzg4i~Bf4JpxXRkCYyy1dOu1xQ5OY645MJLLtsFsJGp7WPXxJbn97Aycen2JaJG68-hxEEMG1q1B4yr8oAYGgDd8lRk0xY8YSao~y7nYHa3pgHOxK7Y3GwOEblRbmaudBaiRjTBnl6J1qV4BoGBOLrW3Fldyz5Yh0vBMgN6wuVbzV2yMINLBsQRLRPbjjUFELputUD6tbAL0Oda5saW4X2xQDB7pgt0FCWo-AzrQ5wxT7xmcDOxAw4LHh0Hbr0AkJvFkLH0ZOm0DkWyjwe9NuAk13hS6I2FyVZG7TerrZVR-BPWBv3TXWKQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#f23549",
+    "title": "Western"
+  },
+  {
+    "id": 6,
+    "name": "Horror",
+    "url": "https://s3-alpha-sig.figma.com/img/f21a/d522/b6c878d8a633609d8450cfb98511cc89?Expires=1698019200&Signature=WpXadr70IeXaRAglRS5RNaTetXlsHn2KyNyLJLIGNQge0RG4N6CGFWFatKgvESsZKoMQOOBdm5mG~pzmcJvvbkCv384GMVwGVlFwjHmNwQe2zlmXJ4cLesxWL66Ck5RVOtZCv4GmsSlRPN00xqMJiUjT9Wnra9tNKbafNGWnBQVA2eUNeIXssqy8IM7x881DJPerok-J9gkKyJDAgw2SPjnaVt7iAD1IXF61wL0u4tLynhSeKdSODveu5yk0c6exyz~ZupwbtLXNraG9URTS2SDGQ30EfKH1iA8R3OAMlXTrmlzrxHhqjb4mPct8gsz5ebE8wm-VgQZJljTQhiz~Jw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#f23549",
+    "title": "Horror"
+  }
+]

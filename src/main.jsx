@@ -4,7 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RegisterPage from "./Components/RegisterPage.jsx";
-import SelectPage from "./Components/SelectPage.jsx";
+import Category from "./Components/SelectCategoryPage/Category.jsx";
+import Homepage from "./Components/Homepage/Homepage.jsx";
 
 const route = createBrowserRouter([
   {
@@ -12,8 +13,12 @@ const route = createBrowserRouter([
     element: <RegisterPage />,
   },
   {
-    path: "select",
-    element: <SelectPage />,
+    path: "Category",
+    element: <Category />,
+  },
+  {
+    path: "Homepage",
+    element: <Homepage />,
   },
   // children: [
   //   {
