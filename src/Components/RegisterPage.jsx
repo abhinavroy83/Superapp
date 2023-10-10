@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./registerPage.css";
-
 import myImage from "../assets/image13.jpg";
 import { useForm } from "react-hook-form";
 import { useNavigate, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setUser } from "../store/slice";
 
 function RegisterPage() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
@@ -14,7 +16,9 @@ function RegisterPage() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    // navigate("/select");
+    dispatch(setUser(data));
+
+    navigate("/Category");
   };
 
   return (

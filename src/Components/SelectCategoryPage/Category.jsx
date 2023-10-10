@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import SelectData from "./SelectData.json";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {setCategory} from '../../store/categorySlice'
 
 function Category() {
   const [selectimage, setselectimage] = useState([]);
   const [Eroors, setErros] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handlimageclick = (image) => {
     if (selectimage.includes(image)) {
@@ -33,10 +36,7 @@ function Category() {
   const nextpage = () => {
     if (selectimage.length >= 3) {
       console.log("Selected Images:");
-      selectimage.forEach((image) => {
-        console.log(image.name);
-      });
-
+      dispatch(setCategory(selectimage));
       navigate("/Homepage");
     }
   };
