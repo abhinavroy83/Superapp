@@ -22,7 +22,7 @@ function RegisterPage() {
   };
 
   return (
-    <div className="registerMain">
+    <div className="registerMain flex justify-evenly">
       <div>
         <img src={myImage} alt="" className="registerImage" />
       </div>
@@ -43,16 +43,7 @@ function RegisterPage() {
           })}
         />
         {errors.Name && <p>{errors.Name.message}</p>}
-        {/* <input
-          type="text"
-          placeholder="Name"
-          {...register("Name", {
-            required: true,
-            maxLength: 20,
-            pattern: /^[A-Za-z]+$/i,
-          })}
-        />
-        {errors?.Name && <p>Name required</p>} */}
+       
         <input
           type="text"
           placeholder="Username"
@@ -79,7 +70,7 @@ function RegisterPage() {
         {errors.check && <p>required</p>}
         <button type="submit">Submit</button>
       </form>
-      <Link to="/Category">sel</Link>
+      {/* <Link to="/Category">sel</Link> */}
     </div>
   );
 }
