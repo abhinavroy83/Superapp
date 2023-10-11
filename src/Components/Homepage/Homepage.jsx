@@ -1,6 +1,6 @@
-import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import Counter from "./Counter";
 
 function Homepage() {
   const userData = useSelector((state) => state.user);
@@ -118,6 +118,7 @@ function Homepage() {
             <p>Loading...</p>
           )}
         </div>
+        <Counter />
       </main>
 
       <aside>
