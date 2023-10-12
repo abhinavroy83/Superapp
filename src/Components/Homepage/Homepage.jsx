@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Counter from "./Counter";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   const userData = useSelector((state) => state.user);
@@ -144,6 +145,7 @@ function Homepage() {
           <p>Loading news data...</p>
         )}
       </aside>
+      <Link to="/Enterainment">Browse</Link>
     </body>
   );
 }

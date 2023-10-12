@@ -65,13 +65,19 @@ function Counter() {
       </div>
     );
   };
-
+  const reset = () => {
+    sethours(0);
+    setMin(0);
+    setSec(0);
+    setisPlaying(false);
+  };
   useEffect(() => {
     if (totalSeconds === 0) {
       setisPlaying(false);
+      sethours(0);
       setMin(0);
       setSec(0);
-      sethours(0);
+      //   setTimeout(() => {}, 1000); // Reset after 2 seconds (adjust the delay as needed)
     }
   }, [totalSeconds]);
   return (
@@ -83,9 +89,6 @@ function Counter() {
         colorsTime={[10, 6, 3, 0]}
         onComplete={() => {
           setisPlaying(false);
-          setMin(0);
-          setSec(0);
-          sethours(0);
           return [false, 0]; // Do not repeat the timer
         }}
       >
@@ -108,6 +111,8 @@ function Counter() {
         <button onClick={decreasesec}>-</button>
       </div>
       <button onClick={handlstart}>Start</button>
+      <br />
+      <button onClick={reset}>rest</button>
     </div>
   );
 }

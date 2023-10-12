@@ -7,7 +7,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RegisterPage from "./Components/RegisterPage.jsx";
 import Category from "./Components/SelectCategoryPage/Category.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
-import {store} from "./store/store.js";
+import { store } from "./store/store.js";
+import Entertainment from "./Components/EntertainmentPage/Entertainment.jsx";
 
 const route = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const route = createBrowserRouter([
   {
     path: "Homepage",
     element: <Homepage />,
+  },
+  {
+    path: "Enterainment",
+    element: <Entertainment />,
   },
 ]);
 
