@@ -9,6 +9,7 @@ import Category from "./Components/SelectCategoryPage/Category.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import { store } from "./store/store.js";
 import Entertainment from "./Components/EntertainmentPage/Entertainment.jsx";
+import MovieSearch from "./Components/EntertainmentPage/MovieSearcg.jsx";
 
 const route = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const route = createBrowserRouter([
   },
   {
     path: "Enterainment",
-    element: <Entertainment />,
+    element: <MovieSearch />,
   },
 ]);
 

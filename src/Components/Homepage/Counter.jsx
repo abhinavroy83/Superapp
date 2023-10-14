@@ -48,6 +48,9 @@ function Counter() {
   };
 
   const renderTime = ({ remainingTime }) => {
+    if (remainingTime === 0) {
+      return <div className="timer">Too late...</div>;
+    }
     const hoursDisplay = Math.max(Math.floor(remainingTime / 3600), 0);
     const minutesDisplay = Math.max(Math.floor((remainingTime % 3600) / 60), 0);
     const secondsDisplay = Math.max(remainingTime % 60, 0); // Ensure secondsDisplay is non-negative

@@ -43,7 +43,7 @@ function Homepage() {
     } catch (error) {
       console.log("Error in fetch wheter api", error);
     }
-  };
+  }; 
 
   const fetchnewsApiData = async () => {
     try {
