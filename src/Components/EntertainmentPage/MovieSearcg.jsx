@@ -2,74 +2,74 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 const MovieSearch = () => {
-  const [responseData, setResponseData] = useState([]);
   const useCategory = useSelector((state) => state.category);
-  console.log(useCategory)
+  const [categoryMovies, setCategoryMovies] = useState({});
 
   useEffect(() => {
-    fetchmoviedata();
-  }, []);
+    const fetchMoviesForCategory = async (category) => {
+      const options = {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key":
+            "2ddc185422msh7a505ce71d867adp1311d9jsna67a7f51d280",
+          "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
+        },
+      };
 
-  const fetchmoviedata = async () => {
-    try {
-      const response = await fetch(
-        "https://api.themoviedb.org/3/trending/all/day?api_key=57abbcbb70212586ce7032d82b824430"
-      );
-      const data = await response.json();
-      setResponseData(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+      try {
+        const response = await fetch(
+          `https://moviesdatabase.p.rapidapi.com/titles?genre=${category}&year=2022`,
+          options
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          // Adjust data extraction based on the response structure of your new API
+          const newMovies = data.results.slice(4, 8);
+          setCategoryMovies((prevMovies) => ({
+            ...prevMovies,
+            [category]: newMovies,
+          }));
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    // Fetch movies for each category
+    useCategory.forEach((category) => {
+      fetchMoviesForCategory(category.title);
+    });
+  }, [useCategory]);
 
   return (
-    <div>
-      <div>
-        {useCategory ? (
-          <div>
-            {useCategory.map((item) => {
-                  return (
-                    <span key={item.id} className=" px-2">
-                      {item.title}
-                    </span>
-                  );
-                })}
+    <>
+      {useCategory.map((category) => (
+        <div key={category.id}>
+          <p>{category.title}</p>
+          <div className="flex">
+            {categoryMovies[category.title]?.map((movie, idx) => {
+              console.log(movie?.primaryImage?.url);
+              return (
+                <div key={idx} style={{ width: "20vw", margin: "2vw" }}>
+                  <p>{movie?.releaseYear?.year}</p>
+                  <img
+                    src={movie?.primaryImage?.url}
+                    style={{
+                      objectFit: "cover",
+                      width: "20vw",
+                      height: "20vh",
+                      borderRadius: "12px",
+                    }}
+                  />
+                </div>
+              );
+            })}
           </div>
-        ) : (
-          <p>Eroor</p>
-        )}
-      </div>
-
-      <div>
-        {responseData &&
-        responseData.results &&
-        responseData.results.length > 0 ? (
-          <div>
-            {responseData.results.map((data, index) => (
-              <div key={index}>
-                <p>{data.title}</p>
-                <p>{data.media_type}</p>
-                <img
-                  src={
-                    data.poster_path
-                      ? `https://image.tmdb.org/t/p/w300/${data.poster_path}`
-                      : unavailable
-                  }
-                  alt="not available"
-                />
-
-                {/* <img src={data.backdrop_path} alt="not" /> */}
-              </div>
-            ))}
-            {/* <h1>{responseData.results[0].title}</h1>
-          <img src={responseData.results[0].poster_path} alt="not" /> */}
-          </div>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </div>
-      
-    </div>
+        </div>
+      ))}
+    </>
   );
 };
 
