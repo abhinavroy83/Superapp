@@ -1,0 +1,95 @@
+.registerMain {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerImage {
+  width: 50vw; /* Set the width to 50% of viewport width */
+  height: 100vh;
+}
+
+.super {
+  color: #72db73;
+  font-family: Single Day;
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 93.591px */
+}
+
+.box2 {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create_account {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 34.922px */
+}
+form button {
+  width: 518px;
+  height: 55px;
+  border-radius: 28px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 108.688%; /* 31.519px */
+  letter-spacing: 0.58px;
+}
+
+form p{
+  color: red;
+}
+
+form input {
+  margin: 5px;
+  width: 500px;
+  height: 60.869px;
+  padding: 0px 5px 0px 10px;
+  border-radius: 3.816px;
+  background: #292929;
+  color: #fff;
+  outline: none;
+}
+
+.check_box {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 60.869px;
+}
+
+#check_input {
+  width: 18px;
+  height: 18px;
+  background: rgba(217, 217, 217, 1);
+  border: 2px solid #a30c0c;
+}
+
+.check_box p {
+  color: #7c7c7c;
+  font-family: DM Sans;
+  font-size: 20.033px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.688%; /* 27.984px */
+  letter-spacing: 0.401px;
+}

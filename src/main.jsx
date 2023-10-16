@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { Provider } from "react-redux";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import RegisterPage from "./Components/RegisterPage.jsx";
+import RegisterPage from "./Components/RegisterPage/RegisterPage.jsx";
 import Category from "./Components/SelectCategoryPage/Category.jsx";
 import Homepage from "./Components/Homepage/Homepage.jsx";
 import { store } from "./store/store.js";

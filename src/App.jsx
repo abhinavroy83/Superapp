@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import RegisterPage from "./Components/RegisterPage";
+import RegisterPage from "./Components/RegisterPage/RegisterPage";
 import { Outlet } from "react-router-dom";
 
 function App() {

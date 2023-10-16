@@ -26,7 +26,7 @@ const MovieSearch = () => {
           const data = await response.json();
           console.log(data);
           // Adjust data extraction based on the response structure of your new API
-          const newMovies = data.results.slice(4, 8);
+          const newMovies = data.results.slice(4,8);
           setCategoryMovies((prevMovies) => ({
             ...prevMovies,
             [category]: newMovies,
@@ -53,7 +53,7 @@ const MovieSearch = () => {
               console.log(movie?.primaryImage?.url);
               return (
                 <div key={idx} style={{ width: "20vw", margin: "2vw" }}>
-                  <p>{movie?.releaseYear?.year}</p>
+                  {/* <p>{movie?.releaseYear?.year}</p> */}
                   <img
                     src={movie?.primaryImage?.url}
                     style={{
