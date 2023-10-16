@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import SelectData from "./SelectData.json";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import {setCategory} from '../../store/categorySlice'
+import { setCategory } from "../../store/categorySlice";
+import "./Category.css";
 
 function Category() {
   const [selectimage, setselectimage] = useState([]);
@@ -15,7 +16,7 @@ function Category() {
       setselectimage(
         selectimage.filter((selectimage) => selectimage !== image)
       );
-    } else if (selectimage.length <= 5) {
+    } else if (selectimage.length <= 9) {
       setselectimage([...selectimage, image]);
     }
   };
@@ -42,32 +43,38 @@ function Category() {
   };
 
   return (
-    <div className=" flex justify-evenly  items-center">
+    <div className="category_main  ">
       <div className="selected-images">
-        <h2>Selected Images</h2>
-        <ul>
+        <p className="header_name">Super app</p>
+        <p className="choose_header">Choose your entertainment category</p>
+        <div className=" flex flex-wrap justify-evenly items-start category_box">
           {selectimage.map((image) => (
-            <li key={image.id}>
-              {image.title}
+            <div key={image.id} className="category_list">
+              <p>{image.title}</p>
               <button onClick={() => handleDeleteImage(image)}>X</button>
-            </li>
+            </div>
           ))}
-        </ul>
-        {Eroors && <p>{Eroors}</p>}
+        </div>
+        {Eroors && <p className="error">{Eroors}</p>}
       </div>
-      <div className=" flex justify-evenly">
+      <div className="image_box">
         {SelectData.map((image) => (
           <div
             key={image.id}
             onClick={() => handlimageclick(image)}
-            className=" flex-col mx-4 w-20 h-15 border-red-50"
+            className="img_box"
+            style={{ backgroundColor: image.backgroundColor }}
           >
-            <p>{image.title}</p>
-            <img src={image.url} alt={image.name} />
+            <p style={{ backgroundColor: image.backgroundColor }}>
+              {image.title}
+            </p>
+            <img src={image.url} alt={image.name} className="w-20 h-15" />
           </div>
         ))}
+        <button onClick={nextpage} className="next_button">
+          Next
+        </button>
       </div>
-      <button onClick={nextpage}>Next</button>
     </div>
   );
 }

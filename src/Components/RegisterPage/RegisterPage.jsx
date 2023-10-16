@@ -81,7 +81,7 @@ function RegisterPage() {
         </form>
         <p className=" text-white">
           By clicking on Sign up. you agree to Superapp
-          <span>Terms and Conditions of Use</span>
+          <span className=" text-green-600">Terms and Conditions of Use</span>
         </p>
       </div>
       {/* <Link to="/Category">sel</Link> */}

@@ -38,7 +38,28 @@
     "id": 6,
     "name": "Horror",
     "url": "https://s3-alpha-sig.figma.com/img/f21a/d522/b6c878d8a633609d8450cfb98511cc89?Expires=1698019200&Signature=WpXadr70IeXaRAglRS5RNaTetXlsHn2KyNyLJLIGNQge0RG4N6CGFWFatKgvESsZKoMQOOBdm5mG~pzmcJvvbkCv384GMVwGVlFwjHmNwQe2zlmXJ4cLesxWL66Ck5RVOtZCv4GmsSlRPN00xqMJiUjT9Wnra9tNKbafNGWnBQVA2eUNeIXssqy8IM7x881DJPerok-J9gkKyJDAgw2SPjnaVt7iAD1IXF61wL0u4tLynhSeKdSODveu5yk0c6exyz~ZupwbtLXNraG9URTS2SDGQ30EfKH1iA8R3OAMlXTrmlzrxHhqjb4mPct8gsz5ebE8wm-VgQZJljTQhiz~Jw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-    "backgroundColor": "#f23549",
+    "backgroundColor": "#7358FF",
     "title": "Horror"
+  },
+  {
+    "id": 7,
+    "name": "Fantasy",
+    "url":"https://s3-alpha-sig.figma.com/img/fd19/97fb/6a3afa2b07953f793022c6eae90ea3c9?Expires=1698624000&Signature=nynNz3uwmDFo5LucTiyFZk1DdNh43UPWilnyS61YVgSkw70h2mvtZRKF9DTR~yt453hoQTh4DnvgVgeFRHwem5gOFjuJJwOIBwcNf4bkE4P2J6GEJeGbhPmg0H6wh8m19xw-S3KJjmM1Chpq5G-Ctdl1KkeF~8dD4aPpxwWQjA1QzpvHLwMDqcR011qrwSEotxUD~MqSGqMwk9IDH-odLU6l8SEjsxYxIIp4pIu4BBMW88iYyAvA6sGDwYhy8iEVMAJI1j31-l3JQeSGbTcLidGNjni-DbnCU3ylnigmWpWHt9oT5nSJj~dfHTaSa~PZseERTpKP2amZ19RsOdYXcA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#FF4ADE",
+    "title": "Fantasy"
+  },
+  {
+    "id": 8,
+    "name": "Music",
+    "url": "https://s3-alpha-sig.figma.com/img/407d/256f/96a1a15bc0fe7621c72274bf0efc55f0?Expires=1698624000&Signature=Vw7GOMuJucLRAecDHcAUS68T9m5PPY5tbViSkyJsT~asFp8J6bL-B7D~H50aDIvb4xbjvt8p-tgnjCH0svIuFz7Ct0mXfNPLNRhAfiOO7K36q2Gnjp7IuSMD6K~8LhuoA1urPqhsd2bE-6WjALO5R42OEkEJqg2zphlzjHWrjG5mFbCx5Lu1sAFQ-HFgE0mgEirsJQ3Rjr00sNWbl4~3~PO4svGEx6dQ-uTYxQ4PlQJMUD7JGq3SrRo7j0eF2goa1ddQ9oi4rZHZdFIK2fyGmhizNBo1KxCCSSq~VhnqIaUEED~0LQFSrayfapDqdAW40oj1LgLUmGMgfyoevZ13YQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#E61E32",
+    "title": "Music"
+  },
+  {
+    "id": 9,
+    "name": "Fiction",
+    "url": "https://s3-alpha-sig.figma.com/img/ab51/ca62/8ce3412a242698db2503fd83abadde4c?Expires=1698624000&Signature=YqV5fxynEN1SLm2L2aoSeW7cI4DvAq7xRqFNa15F57IaqH5rTPpbee5k3HsdVTOV8fScEgbK~y91OLR~NCxr8JpeOEVXxpvHX4LEI23hD3SDK81qWI8iwQ2T00~TM7VdthPXYlmTO6NzAWA9Mwzb6TLm7yLHIcDJpTAEt6howjXHZoE0dUJ58WEX5NxSB9nbTooKrrmoKsPLxLcIOen4wn7vpAlvizl80bkBwCXGBNp1gDfXuqpNb3nGuG0cEmA9~p2aTRX7-LFukJ1Jy~0ocSOXaQOdiOHbRELasKdttNkq1H6vSqLsQLzI2H8Lrn~TunstmiDdgm7YNTZyA5q6oQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "backgroundColor": "#6CD061",
+    "title": "Fiction"
   }
 ]
