@@ -1,0 +1,72 @@
+.setHms {
+  width: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter {
+  margin: 10px;
+  width: 1038px;
+  height: 300px;
+  border-radius: 19px;
+  background: #1e2343;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.settime {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.decrease {
+  width: 27px;
+  height: 17.221px;
+  flex-shrink: 0;
+}
+
+.hhmmssname {
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: start;
+  color: #949494;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105.688%; /* 27.479px */
+  letter-spacing: 1.04px;
+}
+
+.setHHMMSS {
+  padding: 5px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 105.688%; /* 59.185px */
+  letter-spacing: 2.24px;
+}
+
+.handlestart {
+  margin: 15px;
+  width: 432px;
+  height: 47px;
+  border-radius: 20px;
+  background: #ff6a6a;
+}
+
+.value {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105.688%; /* 42.275px */
+  letter-spacing: 1.6px;
+}

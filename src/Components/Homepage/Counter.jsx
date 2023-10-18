@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import "./counter.css";
+import increaseicon from "../../assets/increase.png";
+import dereaseicon from "../../assets/decrese.png";
 
 function Counter() {
   const [hours, sethours] = useState(0);
@@ -48,16 +51,15 @@ function Counter() {
   };
 
   const renderTime = ({ remainingTime }) => {
-    if (remainingTime === 0) {
-      return <div className="timer">Too late...</div>;
-    }
+    // if (remainingTime === 0) {
+    //   return <div className="timer">Too late...</div>;
+    // }
     const hoursDisplay = Math.max(Math.floor(remainingTime / 3600), 0);
     const minutesDisplay = Math.max(Math.floor((remainingTime % 3600) / 60), 0);
     const secondsDisplay = Math.max(remainingTime % 60, 0); // Ensure secondsDisplay is non-negative
 
     return (
       <div className="timer">
-        <div className="text">Remaining</div>
         <div className="value">{`${hoursDisplay
           .toString()
           .padStart(2, "0")}:${minutesDisplay
@@ -84,38 +86,88 @@ function Counter() {
     }
   }, [totalSeconds]);
   return (
-    <div className="flex">
-      <CountdownCircleTimer
-        isPlaying={isPlaying}
-        duration={totalSeconds}
-        colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
-        colorsTime={[10, 6, 3, 0]}
-        onComplete={() => {
-          setisPlaying(false);
-          return [false, 0]; // Do not repeat the timer
-        }}
-      >
-        {renderTime}
-      </CountdownCircleTimer>
+    <div className="counter ">
+      <div>
+        <CountdownCircleTimer
+          isPlaying={isPlaying}
+          duration={totalSeconds}
+          colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
+          colorsTime={[10, 6, 3, 0]}
+          onComplete={() => {
+            setisPlaying(false);
+            return [false, 0]; // Do not repeat the timer
+          }}
+        >
+          {renderTime}
+        </CountdownCircleTimer>
+      </div>
 
-      <div className="container">
-        <button onClick={increasehour}>+</button>
-        <p>H:{hours} </p>
-        <button onClick={decreasehour}>-</button>
+      <div className="setHms ">
+        <div className="settime">
+          <div className="">
+            <p className="hhmmssname">Hours</p>
+            <div className="flex flex-col  items-center my-2">
+              <img
+                className="decrease"
+                src={increaseicon}
+                alt=""
+                onClick={increasehour}
+              />
+              <p className="setHHMMSS">{hours} </p>
+              <img
+                className="decrease"
+                src={dereaseicon}
+                onClick={decreasehour}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="">
+            <p className="hhmmssname">Minute</p>
+            <div className="flex flex-col  items-center my-2">
+              <img
+                className="decrease"
+                src={increaseicon}
+                alt=""
+                onClick={increasemin}
+              />
+              <p className="setHHMMSS">{Min}</p>
+              <img
+                className="decrease"
+                src={dereaseicon}
+                onClick={decreasemin}
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="">
+            <p className="hhmmssname">Second</p>
+            <div className=" flex flex-col  items-center my-2">
+              <img
+                className="decrease"
+                src={increaseicon}
+                alt=""
+                onClick={increasec}
+              />
+              <p className="setHHMMSS">{Sec}</p>
+              <img
+                className="decrease"
+                src={dereaseicon}
+                onClick={decreasesec}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className=" text-center">
+          <button className="handlestart" onClick={handlstart}>
+            Start
+          </button>
+          {/* <br />
+          <button onClick={reset}>rest</button> */}
+        </div>
       </div>
-      <div className="container">
-        <button onClick={increasemin}>+</button>
-        <p>M:{Min}</p>
-        <button onClick={decreasemin}>-</button>
-      </div>
-      <div className="container">
-        <button onClick={increasec}>+</button>
-        <p>{Sec}</p>
-        <button onClick={decreasesec}>-</button>
-      </div>
-      <button onClick={handlstart}>Start</button>
-      <br />
-      <button onClick={reset}>rest</button>
     </div>
   );
 }

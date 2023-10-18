@@ -7,7 +7,7 @@ import "./Category.css";
 
 function Category() {
   const [selectimage, setselectimage] = useState([]);
-  const [Eroors, setErros] = useState("");
+  const [Eroors, setErros] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -28,9 +28,9 @@ function Category() {
   };
   useEffect(() => {
     if (selectimage.length < 3) {
-      setErros("Minimum 3 category required");
+      setErros(true);
     } else {
-      setErros("");
+      setErros(false);
     }
   }, [selectimage]);
 
@@ -38,6 +38,7 @@ function Category() {
     if (selectimage.length >= 3) {
       console.log("Selected Images:");
       dispatch(setCategory(selectimage));
+      // setErros(true)
       navigate("/Homepage");
     }
   };
@@ -55,7 +56,7 @@ function Category() {
             </div>
           ))}
         </div>
-        {Eroors && <p className="error">{Eroors}</p>}
+        {Eroors && <p className="error">Minimum 3 category required</p>}
       </div>
       <div className="image_box">
         {SelectData.map((image) => (
