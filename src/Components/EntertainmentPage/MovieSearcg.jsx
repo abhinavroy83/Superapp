@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import "./Moive.css";
 
 const MovieSearch = () => {
   const useCategory = useSelector((state) => state.category);
@@ -26,7 +27,7 @@ const MovieSearch = () => {
           const data = await response.json();
           console.log(data);
           // Adjust data extraction based on the response structure of your new API
-          const newMovies = data.results.slice(4,8);
+          const newMovies = data.results.slice(4, 8);
           setCategoryMovies((prevMovies) => ({
             ...prevMovies,
             [category]: newMovies,
@@ -44,32 +45,41 @@ const MovieSearch = () => {
   }, [useCategory]);
 
   return (
-    <>
-      {useCategory.map((category) => (
-        <div key={category.id}>
-          <p>{category.title}</p>
-          <div className="flex">
-            {categoryMovies[category.title]?.map((movie, idx) => {
-              console.log(movie?.primaryImage?.url);
-              return (
-                <div key={idx} style={{ width: "20vw", margin: "2vw" }}>
-                  {/* <p>{movie?.releaseYear?.year}</p> */}
-                  <img
-                    src={movie?.primaryImage?.url}
-                    style={{
-                      objectFit: "cover",
-                      width: "20vw",
-                      height: "20vh",
-                      borderRadius: "12px",
-                    }}
-                  />
-                </div>
-              );
-            })}
-          </div>
+    <div className="moviemain">
+      <div className="movie_head">
+        <div className="super">
+          <p>Super app</p>
         </div>
-      ))}
-    </>
+        <div>back</div>
+      </div>
+      <div className=" flex-col justify-center items-center mx-24">
+        <p className="hints">Entertainment according to your choice</p>
+        {useCategory.map((category) => (
+          <div key={category.id}>
+            <p className="title ">{category.title}</p>
+            <div className="flex justify-center">
+              {categoryMovies[category.title]?.map((movie, idx) => {
+                console.log(movie?.primaryImage?.url);
+                return (
+                  <div key={idx} style={{ width: "20vw", margin: "25px" }}>
+                    {/* <p>{movie?.releaseYear?.year}</p> */}
+                    <img
+                      src={movie?.primaryImage?.url}
+                      style={{
+                        objectFit: "cover",
+                        width: "20vw",
+                        height: "20vh",
+                        borderRadius: "12px",
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
