@@ -15,8 +15,10 @@ function RegisterPage() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     dispatch(setUser(data));
+    localStorage.setItem("userData", JSON.stringify(data));
+    console.log(data)
 
     navigate("/Category");
   };

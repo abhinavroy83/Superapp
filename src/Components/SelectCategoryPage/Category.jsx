@@ -37,6 +37,7 @@ function Category() {
   const nextpage = () => {
     if (selectimage.length >= 3) {
       console.log("Selected Images:");
+      localStorage.setItem("selectedImages", JSON.stringify(selectimage));
       dispatch(setCategory(selectimage));
       // setErros(true)
       navigate("/Homepage");

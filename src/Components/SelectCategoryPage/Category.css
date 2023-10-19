@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #000;
 }
 .selected-images {
   width: 50vw;
